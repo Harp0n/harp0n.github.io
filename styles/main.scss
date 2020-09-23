@@ -1,0 +1,20 @@
+@import "variables";
+@import "animations";
+@import "body";
+
+@media (max-width: 599px) {
+    @import "main-project-mobile";
+    @import "main-page-mobile";
+    @import "team-page-mobile";
+}
+
+@media (min-width: 600px) {
+    @import "main-page";
+    @import "main-arrow";
+    @import "main-project";
+    @import "team-page";
+
+
+}
+
+@import "style-coding-div";
