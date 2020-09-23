@@ -79,8 +79,8 @@ if (window.matchMedia("(min-width: 600px)").matches) {
     "assets/img/Pablo.png",
     "Paweł Kubala",
     "Harp0n Front-End Developer",
-    "www.github.com/pawelkubala",
-    "www.linkedin.com/pawelkubal"
+    "https://github.com/Kubcioooo",
+    "https://www.linkedin.com/in/pkubala/"
   );
   const seba = memberCard(
     " Computer Science student at Wrocław University of Science and Technology. <br /> Also, hobbyist game developer",
@@ -92,8 +92,8 @@ if (window.matchMedia("(min-width: 600px)").matches) {
     "assets/img/Sebastian.png",
     "Sebastian Pięta",
     "Harp0n Backend Developer",
-    "www.github.com/pawelkubala",
-    "www.linkedin.com/pawelkubal"
+    "https://github.com/KraftUnderscore",
+    "https://www.linkedin.com/in/spieta/"
   );
 
   const mihal = memberCard(
@@ -106,8 +106,8 @@ if (window.matchMedia("(min-width: 600px)").matches) {
     "assets/img/Michu.png",
     "Michał Janik",
     "Harp0n Data Scientist",
-    "www.github.com/pawelkubala",
-    "www.linkedin.com/pawelkubal"
+    "https://github.com/mihal09",
+    "https://www.linkedin.com/in/janikmichal/"
   );
   const piotrek = memberCard(
     "Computer Science student at Wrocław University of Science and Technology. <br /> Interested in web-development, especially the Django framework.",
@@ -119,8 +119,8 @@ if (window.matchMedia("(min-width: 600px)").matches) {
     "assets/img/Pioter.png",
     "Piotr Szymański",
     "Harp0n Fullstack Dev",
-    "www.github.com/pawelkubala",
-    "www.linkedin.com/pawelkubal"
+    "https://github.com/PitiMonster",
+    "https://www.linkedin.com/in/piotr-szym/"
   );
   const radek = memberCard(
     "   IT student at Wroclaw University of Science and Technology with working experience. <br /> Interested in web technologies.",
@@ -132,8 +132,8 @@ if (window.matchMedia("(min-width: 600px)").matches) {
     "assets/img/Radko.png",
     "Radek Karbowiak",
     "Harp0n Fullstack Dev",
-    "www.github.com/pawelkubala",
-    "www.linkedin.com/pawelkubal"
+    "https://github.com/Reevo55",
+    "https://www.linkedin.com/in/radoslaw-karbowiak"
   );
   document.getElementById("team-page").append(pawel);
   document.getElementById("team-page").append(radek);
