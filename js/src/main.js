@@ -1,4 +1,3 @@
-
 if (window.matchMedia("(min-width: 600px)").matches) {
   const memberCards = document.querySelector(".team-image-container");
   const memberInfo = document.querySelector(".team-member-info");
@@ -71,7 +70,7 @@ if (window.matchMedia("(min-width: 600px)").matches) {
     return container;
   };
   const pawel = memberCard(
-    "IT Student at Wroclaw University of Science and Technology",
+    " IT student at Wroclaw University of Science and Technology. Passionate about new technologies. <br /> Also, sexy.",
     [
       "assets/img/skills/css_logo.png",
       "assets/img/skills/html_logo.svg",
