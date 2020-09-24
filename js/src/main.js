@@ -1,3 +1,8 @@
+window.addEventListener('resize', function () {
+  "use strict";
+  window.location.reload();
+});
+
 if (window.matchMedia("(min-width: 600px)").matches) {
   const memberCards = document.querySelector(".team-image-container");
   const memberInfo = document.querySelector(".team-member-info");
@@ -41,6 +46,7 @@ if (window.matchMedia("(min-width: 600px)").matches) {
     github,
     linkedin
   ) => {
+
     const container = document.createElement("div");
     container.className = "member-card-mobile";
     const inner = `
@@ -101,7 +107,7 @@ if (window.matchMedia("(min-width: 600px)").matches) {
     [
       "assets/img/skills/python_logo.png",
       "assets/img/skills/tensorflow_logo.svg",
-      "assets/img/skills/apache_spark_logo.svg",
+      "assets/img/skills/sql_logo.svg",
     ],
     "assets/img/Michu.png",
     "Michał Janik",
@@ -118,26 +124,37 @@ if (window.matchMedia("(min-width: 600px)").matches) {
     ],
     "assets/img/Pioter.png",
     "Piotr Szymański",
-    "Harp0n Fullstack Dev",
+    "Harp0n Full-Stack Dev",
     "https://github.com/PitiMonster",
     "https://www.linkedin.com/in/piotr-szym/"
   );
   const radek = memberCard(
     "   IT student at Wroclaw University of Science and Technology with working experience. <br /> Interested in web technologies.",
     [
-      "assets/img/skills/css_logo.png",
-      "assets/img/skills/node_logo.svg",
+      "assets/img/skills/js_logo.svg",
+      "assets/img/skills/ts_logo.svg",
       "assets/img/skills/react_logo.png",
     ],
     "assets/img/Radko.png",
     "Radek Karbowiak",
-    "Harp0n Fullstack Dev",
+    "Harp0n Full-Stack Dev",
     "https://github.com/Reevo55",
     "https://www.linkedin.com/in/radoslaw-karbowiak"
   );
-  document.getElementById("team-page").append(pawel);
-  document.getElementById("team-page").append(radek);
-  document.getElementById("team-page").append(seba);
-  document.getElementById("team-page").append(mihal);
-  document.getElementById("team-page").append(piotrek);
+  const titleDiv = document.createElement('div');
+  titleDiv.innerHTML = `<div class="team-page-header">
+  <div class="team-page-header__title"></div>
+  <p class="team-page-header__description">
+    We are a group of friends from Legnica.
+    <br>Our programming interests differ from each other and that's why there's nothing we can't do together.
+  </p>
+   </div>`
+
+  const teamSection = document.getElementById("team-page");
+  teamSection.append(titleDiv);
+  teamSection.append(pawel);
+  teamSection.append(radek);
+  teamSection.append(seba);
+  teamSection.append(mihal);
+  teamSection.append(piotrek);
 }

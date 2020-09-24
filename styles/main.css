@@ -157,12 +157,12 @@ section {
 @media (max-width: 599px) and (max-width: 40rem) {
   .project-carousel {
     position: relative;
-    height: 100vh;
+    height: 50vh;
     width: 100vw;
     font-family: "Bebas neue";
   }
   .carousel-item {
-    height: 100vh;
+    height: 50vh;
     width: 100vw;
     display: none;
     position: absolute;
@@ -381,6 +381,40 @@ section {
     -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
+  #team-page .team-page-header {
+    position: relative;
+    background-color: #292826;
+    height: 30vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-top: 2px solid #f9d342;
+  }
+  #team-page .team-page-header .team-page-header__title {
+    position: static;
+    width: 70vw;
+    height: 10vh;
+    background-image: url("../assets/img/harp0n-team.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  #team-page .team-page-header .team-page-header__description {
+    margin-top: 2rem;
+    position: static;
+    text-align: center;
+    font-family: 'Roboto';
+    color: white;
+  }
   #team-page .team-image-container__images {
     display: none;
   }
@@ -388,7 +422,7 @@ section {
     display: none;
   }
   #team-page .member-card-mobile {
-    height: 60vh;
+    height: 54vh;
     position: relative;
   }
   #team-page .member-card-mobile p {
@@ -401,17 +435,17 @@ section {
     font-family: 'Roboto';
     color: #292826;
   }
-  #team-page .member-card__image {
+  #team-page .member-card-mobile .member-card__image {
     height: 80%;
     position: relative;
   }
-  #team-page .member-card__image img {
+  #team-page .member-card-mobile .member-card__image img {
     width: 50%;
     position: absolute;
     bottom: 0;
     right: 0;
   }
-  #team-page .member-card__social {
+  #team-page .member-card-mobile .member-card__social {
     position: absolute;
     top: 60%;
     display: -webkit-box;
@@ -426,22 +460,22 @@ section {
             flex-direction: row;
     height: 10%;
   }
-  #team-page .member-card__social a {
+  #team-page .member-card-mobile .member-card__social a {
     height: 100%;
     margin: 0;
     margin-left: 1rem;
   }
-  #team-page .member-card__social img {
+  #team-page .member-card-mobile .member-card__social img {
     height: 3rem;
     margin-right: 0;
   }
-  #team-page .member-card-mobile__info {
+  #team-page .member-card-mobile .member-card-mobile__info {
     position: relative;
     background-color: #292826;
     -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
   }
-  #team-page .member-card__technologies {
+  #team-page .member-card-mobile .member-card__technologies {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -451,11 +485,11 @@ section {
             flex-direction: row;
     width: 60%;
   }
-  #team-page .member-card__technology img {
+  #team-page .member-card-mobile .member-card__technology img {
     height: 3rem;
     margin: .5rem .2rem;
   }
-  #team-page h1 {
+  #team-page .member-card-mobile h1 {
     margin: 0;
     padding: 0;
     font-family: 'Roboto';
@@ -465,7 +499,7 @@ section {
     top: .5rem;
     font-size: 1.5rem;
   }
-  #team-page h2 {
+  #team-page .member-card-mobile h2 {
     color: white;
     position: absolute;
     font-size: 1rem;
@@ -473,6 +507,98 @@ section {
     font-weight: 100;
     top: 2rem;
     right: .5rem;
+  }
+  #team-page .member-card-mobile:nth-child(2n + 1) {
+    height: 54vh;
+    position: relative;
+  }
+  #team-page .member-card-mobile:nth-child(2n + 1) p {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translateY(-40%);
+            transform: translateY(-40%);
+    width: 50%;
+    font-family: 'Roboto';
+    color: #292826;
+  }
+  #team-page .member-card-mobile:nth-child(2n + 1) .member-card__image {
+    height: 80%;
+    position: relative;
+  }
+  #team-page .member-card-mobile:nth-child(2n + 1) .member-card__image img {
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  #team-page .member-card-mobile:nth-child(2n + 1) .member-card__social {
+    position: absolute;
+    top: 60%;
+    right: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: right;
+        -ms-flex-align: right;
+            align-items: right;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 10%;
+  }
+  #team-page .member-card-mobile:nth-child(2n + 1) .member-card__social a {
+    height: 100%;
+    margin: 0;
+    margin-right: 1rem;
+  }
+  #team-page .member-card-mobile:nth-child(2n + 1) .member-card__social img {
+    height: 3rem;
+    margin-left: 0;
+  }
+  #team-page .member-card-mobile:nth-child(2n + 1) .member-card-mobile__info {
+    position: relative;
+    background-color: #292826;
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  }
+  #team-page .member-card-mobile:nth-child(2n + 1) .member-card__technologies {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    left: 55%;
+    width: 60%;
+  }
+  #team-page .member-card-mobile:nth-child(2n + 1) .member-card__technology img {
+    height: 3rem;
+    margin: .5rem .2rem;
+  }
+  #team-page .member-card-mobile:nth-child(2n + 1) h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    color: white;
+    position: absolute;
+    left: .5rem;
+    top: .5rem;
+    font-size: 1.5rem;
+  }
+  #team-page .member-card-mobile:nth-child(2n + 1) h2 {
+    color: white;
+    position: absolute;
+    font-size: 1rem;
+    font-family: 'Roboto';
+    font-weight: 100;
+    top: 2rem;
+    left: .5rem;
   }
 }
 
@@ -798,6 +924,17 @@ section {
   }
   #projects-page .carousel-item__text-description--links li {
     margin: 0 2rem;
+    border: 2px solid #f9d342;
+    padding: 0.5rem 1.5rem;
+    -webkit-box-shadow: 0 1.3rem 2.5rem rgba(0, 0, 0, 0.15);
+            box-shadow: 0 1.3rem 2.5rem rgba(0, 0, 0, 0.15);
+  }
+  #projects-page .carousel-item__text-description--links li:active, #projects-page .carousel-item__text-description--links li:hover {
+    margin: 0 2rem;
+    border: 2px solid #bf5748;
+    padding: 0.5rem 1.5rem;
+    -webkit-box-shadow: 0 1.3rem 2.5rem rgba(0, 0, 0, 0.15);
+            box-shadow: 0 1.3rem 2.5rem rgba(0, 0, 0, 0.15);
   }
   #projects-page h1 {
     width: 30%;

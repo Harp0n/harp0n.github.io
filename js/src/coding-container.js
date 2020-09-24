@@ -104,8 +104,10 @@ function playRandomSoundClick() {
     sound.play();
 }
 
-
-codeWriter(codeToWrite);
+if (window.matchMedia("(min-width: 600px)").matches)
+{
+    codeWriter(codeToWrite);
+}
 
 
 
